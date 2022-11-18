@@ -96,5 +96,55 @@ const Contact = () => {
     }
   };
 
-  emailjs.init('user_')
+  emailjs.init("user_7HV2kbTsvjER9prS40Xfg");
+
+  return (
+    <>
+      <form id="contact-form" onSubmit={handleSubmit}>
+        <h1 id="main-section-header">Contact</h1>
+        <hr id="main-section-hr" />
+        <div className="form-inner-container">
+          <input
+            onBlur={(e) => checkForm(e)}
+            onChange={storeData}
+            className="name"
+            type="text"
+            name="fromName"
+            id="fromName"
+            placeholder="Full name*"
+          />
+          <input
+            onBlur={(e) => checkForm(e)}
+            onChange={storeData}
+            name="from_email"
+            id="from_email"
+            className="email"
+            type="email"
+            placeholder="E-mail*"
+          />
+          <input
+            onBlur={(e) => checkForm(e)}
+            onChange={storeData}
+            name="subjectText"
+            id="subjectText"
+            className="subject"
+            type="text"
+            placeholder="Subject*"
+          />
+          <textarea
+            onBlur={(e) => checkForm(e)}
+            onChange={storeData}
+            name="message"
+            id="msg"
+            placeholder="Message*"
+          ></textarea>
+        </div>
+        <p id="email-status"></p>
+        <p id="status"></p>
+        <button id="sendBtn">Send</button>
+      </form>
+    </>
+  );
 };
+
+export default Contact;
