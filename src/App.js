@@ -23,13 +23,13 @@ function App() {
     <main
     onClick={(e) => {
       if (
-        e.target.className == '' ||
-        !e.target.className == 'nav-stack active' ||
-        !e.target.className == 'nav-stack' ||
-        !e.target.className == 'mobile-nav active' ||
-        e.target.className == 'subject' ||
-        e.target.className == 'name' ||
-        e.target.className == 'email' 
+        e.target.className === '' ||
+        !e.target.className === 'nav-stack active' ||
+        !e.target.className === 'nav-stack' ||
+        !e.target.className === 'mobile-nav active' ||
+        e.target.className === 'subject' ||
+        e.target.className === 'name' ||
+        e.target.className === 'email' 
        ) {
         return setActiveNav(false);
       }
@@ -39,6 +39,7 @@ function App() {
     }}
     >
       <nav>
+        <Navigation></Navigation>
         <Header
         activePage={activePage}
         setActivePage={setActivePage}

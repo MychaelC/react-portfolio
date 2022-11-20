@@ -9,7 +9,7 @@ const About = () => {
             <img
             id="portrait"
             src="https://i.imgur.com/z8VyWj3.jpg?1"
-            alt="Self photo Mychael" />
+            alt="Me Mychael" />
         <div id="about-inner-wrapper">
         <h1>Hi, I'm Mychael!</h1>
         <p>

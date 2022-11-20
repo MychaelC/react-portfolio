@@ -3,18 +3,18 @@ import React, { useState } from "react";
 const Navigation = ({ setActivePage, activePage, activeNav, setActiveNav }) => {
     const handlePage = (e) => {
         if (
-            e.target.innerText == 'About me' ||
-            e.target.innerText == 'Mychael Contreras'
+            e.target.innerText === 'About me' ||
+            e.target.innerText === 'Mychael Contreras'
         ) {
             document.title = `Main - ${e.target.innerText}`;
             setActivePage({ about: true });
-        } else if (e.target.innerText == 'Portfolio') {
+        } else if (e.target.innerText === 'Portfolio') {
             document.title = e.target.innerText;
             setActivePage({ portfolio: true });
-        } else if (e.target.innerText == 'Contact') {
+        } else if (e.target.innerText === 'Contact') {
             document.title = e.target.innerText;
             setActivePage({ contact: true });
-        } else if (e.target.innerText == 'Resume') {
+        } else if (e.target.innerText === 'Resume') {
             document.title = e.target.innerText;
             setActivePage({ portfolio: true });
         }

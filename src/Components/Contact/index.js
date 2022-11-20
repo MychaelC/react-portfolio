@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   // Declare status element and setup data state obj
@@ -19,10 +19,10 @@ const Contact = () => {
     document.getElementById("email-status").textContent = "";
     e.preventDefault();
     if (
-      fromName == "" ||
-      from_email == "" ||
-      subjectText == "" ||
-      message == ""
+      fromName === "" ||
+      from_email === "" ||
+      subjectText === "" ||
+      message === ""
     ) {
       statusEl.innerText = "Failed to send message please complete all fields.";
       statusEl.style.color = "gray";
@@ -54,10 +54,10 @@ const Contact = () => {
     document.getElementById("status").textContent = "";
     document.getElementById("email-status").textContent = "";
 
-    if (e.target.name == "from_email") {
+    if (e.target.name === "from_email") {
       const emailStatusEl = document.getElementById("email-status");
 
-      if (e.target.value == "") {
+      if (e.target.value === "") {
         emailStatusEl.innerText = "";
       } else {
         if (validateEmail(e.target.value)) {
@@ -73,7 +73,7 @@ const Contact = () => {
   };
 
   const updateEl = (e, errorPlaceholder, defaultPlaceholder, id) => {
-    if (e.target.value == "") {
+    if (e.target.value === "") {
       document.getElementById(id).placeholder = errorPlaceholder;
       document.getElementById(id).style.border = "2px solid gray";
     } else {
@@ -82,21 +82,21 @@ const Contact = () => {
     }
   };
   const checkForm = (e) => {
-    if (e.target.name == "fromName") {
+    if (e.target.name === "fromName") {
       updateEl(e, "Full name Required*", "Full name*", "fromName");
     }
-    if (e.target.name == "from_email") {
+    if (e.target.name === "from_email") {
       updateEl(e, "E-mail Required*", "E-mail*", "from_email");
     }
-    if (e.target.name == "subjectText") {
+    if (e.target.name === "subjectText") {
       updateEl(e, "Subject Required*", "Subject*", "subjectText");
     }
-    if (e.target.name == "message") {
+    if (e.target.name === "message") {
       updateEl(e, "Message Required*", "Message*", "msg");
     }
   };
 
-  emailjs.init("user_7HV2kbTsvjER9prS40Xfg");
+  emailjs.init("user_NZworZRz4STt_wOpy");
 
   return (
     <>
