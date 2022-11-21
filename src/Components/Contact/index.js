@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
-// import emailjs from "@emailjs/browser";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   // Declare status element and setup data state obj
@@ -28,7 +28,7 @@ const Contact = () => {
       statusEl.style.color = "gray";
     } else {
       if (validateEmail(from_email)) {
-        emailjs.send("service_qnyqg1s", "template_mcuznlb", {
+        emailjs.send("service_2we3x4d", "template_9cd95hl", {
           from_name: fromName,
           from_email: from_email,
           msg: message,
