@@ -1,5 +1,5 @@
-// import React, { useState } from "react";
-import React from 'react';
+import React from "react";
+
 
 const Navigation = ({ setActivePage, activePage, activeNav, setActiveNav }) => {
   const handlePage = (e) => {
@@ -27,7 +27,7 @@ const Navigation = ({ setActivePage, activePage, activeNav, setActiveNav }) => {
       <ul id="desktop-nav">
         <li>
           <a
-            className={`navItem ${activePage.about ? 'active' : ''}`}
+            className={activePage === 'About' ? 'nav-link active' : 'nav-link'}
             href="#About"
             onClick={(e) => handlePage(e)}
           >
@@ -37,7 +37,7 @@ const Navigation = ({ setActivePage, activePage, activeNav, setActiveNav }) => {
         <p>/</p>
         <li>
           <a
-            className={`navItem ${activePage.portfolio ? "active" : ""}`}
+            className={`navItem ${activePage.portfolio ? 'active' : ''}`}
             href="#Portfolio"
             onClick={(e) => handlePage(e)}
           >
@@ -47,7 +47,7 @@ const Navigation = ({ setActivePage, activePage, activeNav, setActiveNav }) => {
         <p>/</p>
         <li>
           <a
-            className={`navItem ${activePage.contact ? "active" : ""}`}
+            className={`navItem ${activePage.contact ? 'active' : ''}`}
             href="#Contact"
             onClick={(e) => handlePage(e)}
           >
@@ -57,7 +57,7 @@ const Navigation = ({ setActivePage, activePage, activeNav, setActiveNav }) => {
         <p>/</p>
         <li>
           <a
-            className={`navItem ${activePage.resume ? "active" : ""}`}
+            className={`navItem ${activePage.resume ? 'active' : ''}`}
             href="#Resume"
             onClick={(e) => handlePage(e)}
           >
@@ -67,12 +67,12 @@ const Navigation = ({ setActivePage, activePage, activeNav, setActiveNav }) => {
       </ul>
       <img
         onClick={() => setActiveNav(!activeNav)}
-        className={`nav-stack ${activeNav ? "active" : ""}`}
+        className={`nav-stack ${activeNav ? 'active' : ''}`}
         src="https://i.imgur.com/BZVQpUd.png"
         alt="Navigation Icon"
       ></img>
       <div>
-        <ul className={`mobile-nav ${activeNav ? "active" : ""}`}>
+        <ul className={`mobile-nav ${activeNav ? 'active' : ''}`}>
           <li>
             <a
               className={`navItem ${activePage.about ? "active" : ""}`}
@@ -84,7 +84,7 @@ const Navigation = ({ setActivePage, activePage, activeNav, setActiveNav }) => {
           </li>
           <li>
             <a
-              className={`navItem ${activePage.portfolio ? "active" : ""}`}
+              className={`navItem ${activePage.portfolio ? 'active' : ''}`}
               href="#Portfolio"
               onClick={(e) => handlePage(e)}
             >
@@ -93,7 +93,7 @@ const Navigation = ({ setActivePage, activePage, activeNav, setActiveNav }) => {
           </li>
           <li>
             <a
-              className={`navItem ${activePage.contact ? "active" : ""}`}
+              className={`navItem ${activePage.contact ? 'active' : ''}`}
               href="#Contact"
               onClick={(e) => handlePage(e)}
             >
@@ -102,7 +102,7 @@ const Navigation = ({ setActivePage, activePage, activeNav, setActiveNav }) => {
           </li>
           <li>
             <a
-              className={`navItem ${activePage.resume ? "active" : ""}`}
+              className={`navItem ${activePage.resume ? 'active' : ''}`}
               href="#Resume"
               onClick={(e) => handlePage(e)}
             >
