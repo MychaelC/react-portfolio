@@ -23,6 +23,15 @@ const Portfolio = () => {
     },
     {
       //name of projects with the class of 'recent',
+      title: "Weather Dashboard",
+      stack: "JavaScript/HTML/CSS/Server-side API",
+      image_url: "https://i.imgur.com/iIJjEv1.png",
+      image_alt: "Preview of Weather Dashboard Project",
+      github_link: "https://github.com/MychaelC/weather-dash",
+      deployed_link: "https://mychaelc.github.io/weather-dash/",
+    },
+    {
+      //name of projects with the class of 'recent',
       title: "Code Quiz Project",
       stack: "Front-End/JavaScript",
       image_url: "https://i.imgur.com/EtFa6b0.png",
