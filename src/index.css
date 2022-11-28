@@ -97,6 +97,136 @@ nav {
 
 #main-section-hr {
   width: 300px;
-  font-size: 30px;
-  letter-spacing: 2px;
+  opacity: 0.5;
+  margin-bottom: 30px;
+}
+
+/* ---Nav Header */
+#header-logo {
+  user-select: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+#header-logo:hover {
+  opacity: 1;
+}
+
+nav {
+  position: fixed;
+  background-color: blue;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: white;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+#desktop-nav {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav li a {
+  color: white;
+}
+
+nav p {
+  color: white;
+  opacity: 0.2;
+}
+
+.navItem {
+  opacity: 0.55;
+}
+
+.navItem:hover {
+  opacity: 0.8;
+}
+
+.navItem.active {
+  opacity: 1;
+}
+
+.nav-stack {
+  background-color: blue;
+  border-radius: 5px;
+  padding: 0 2px;
+  position: absolute;
+  z-index: 9999;
+  right: 20px;
+  top: 18px;
+  cursor: pointer;
+  display: none;
+  width: 55px;
+  transition: all 0.5s cubic-bezier(0.65, 0, 0.33, 0.99);
+}
+
+.nav-stack.active {
+  right: 220px;
+  transition: all 0.5s cubic-bezier(0.65, 0, 0.33, 0.99);
+}
+
+.mobile-nav {
+  width: 200px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: -170px;
+  display: none;
+  opacity: 0;
+  list-style: none;
+  transition: all 0.5s cubic-bezier(0.65, 0, 0.33, 0.99);
+  border-left: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.mobile-nav.active {
+  list-style: none;
+  height: 100vh;
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background-color: blue;
+  transition: all 0.5s cubic-bezier(0.65, 0, 0.33, 0.99);
+  border-left: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.mobile-nav li:first-child {
+  margin-top: 35px;
+}
+
+.mobile-nav li {
+  font-size: 23px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 25px;
+}
+
+#nav-logo {
+  font-size: 20px;
+}
+
+#project-desc {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .mobile-nav {
+    display: unset;
+  }
+  
 }
