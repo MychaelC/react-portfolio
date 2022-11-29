@@ -228,5 +228,177 @@ nav p {
   .mobile-nav {
     display: unset;
   }
-  
+
+  #container-fluid,
+  #header-logo {
+    display: none;
+  }
+
+  .nav-stack {
+    display: flex;
+  }
+
+  nav {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background-color: transparent;
+  }
+
+  #main-wrapper {
+    margin-top: 75px !important;
+    margin-left: 15px;
+  }
+
+  #single-project {
+    margin-right: 0 !important;
+    margin: 0 15px !important;
+  }
+
+  #portfolio-wrapper {
+    position: relative;
+    left: 0 !important;
+  }
+
+  main {
+    align-items: center;
+  }
+
+  #portrait {
+    margin-right: 0 !important;
+  }
+
+  #status {
+    width: 80vw;
+    text-align: center;
+  }
+
+  #resume-wrapper {
+    justify-content: center;
+    text-align: left;
+  }
+
+  #frontend
+  #backend
+  #dev-tools {
+    margin: 0 15px;
+    margin-right: 15px !important;
+  }
+
+  #frontend h1,
+  #backend h1,
+  #dev-tools h1 {
+    font-size: 22px;
+  }
+
+  #frontend li,
+  #backend li,
+  #dev-tools li {
+    font-size: 18px;
+  }
+
+  #main-section-header {
+    font-size: 28px;
+  }
+
+  #main-section-hr {
+    width: 270px;
+  }
+
+  #project-desc {
+    display: unset;
+  }
+
+  #project-bottom-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #project-links,
+  #project-desc {
+    text-indent: 24px;
+  }
+
+  #project-details {
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 551px) {
+  #project-outter-wrapper {
+    align-items: center !important;
+  }
+
+  #project-links,
+  #project-desc {
+    text-indent: 0 !important;
+  }
+
+  #project-links,
+  #project-desc {
+    text-indent: 24px;
+  }
+
+  #project-image {
+    width: 80vw !important;
+  }
+
+  #project-bottom-section {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #project-bottom-section p,
+  #project-bottom-section a {
+    font-size: 18px;
+    letter-spacing: 0.1px;
+  }
+}
+/*---Sect Main wrapper*/
+#main-wrapper {
+  margin-top: 125px;
+  margin-left: 15px;
+}
+
+@media (max-width: 800px) {
+  #main-wrapper {
+    margin-top: 125px;
+    margin-left: 0;
+  }
+
+  #portfolio,
+  #contact-form,
+  #resume,
+  nav {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about {
+    width: unset !important;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #portolio-wrapper {
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #contact-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  #about-wrapper {
+    align-items: center;
+  }
 }
