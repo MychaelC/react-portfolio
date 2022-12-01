@@ -48,7 +48,7 @@ a,
 input,
 input::placeholder,
 textarea::placeholder {
-  color: lightslategray;
+  color: white;
 }
 
 input::placeholder,
