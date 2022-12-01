@@ -24,7 +24,7 @@ const Portfolio = () => {
     {
       //name of projects with the class of 'recent',
       title: "Weather Dashboard",
-      stack: "JavaScript/HTML/CSS/Server-side API",
+      stack: "JavaScript/Server-side API",
       image_url: "https://i.imgur.com/iIJjEv1.png",
       image_alt: "Preview of Weather Dashboard Project",
       github_link: "https://github.com/MychaelC/weather-dash",
@@ -50,7 +50,7 @@ const Portfolio = () => {
     },
     {
       //name of projects with the class of 'recent',
-      title: "Professional README Generator",
+      title: "Pro README Generator",
       stack: "Node.js/Inquirer",
       image_url: "https://i.imgur.com/xmkZQYi.png",
       image_alt: "Preview of Readme Generator Project",

@@ -22,7 +22,7 @@ const About = () => {
             HTML, CSS, JavaScript, MySQL, Sequelize, MongoDB, Mongoose, GraphQL, Axios, Heroku, Git, Node.js, React.js, Express.js, Bootstrap, Materialize, jQuery, Localhost/storage, RESTful API's, 3rd Party API's, Insomnia, Moment.js, Webpack. Also experienced in web development models such as Object Oriented Programming (OOP), Model-View-Controller (MVC), Progressive Web Apps (PWA), Test Driven Development (TDD), Object Relational Mapping (ORM) and Mongo-Express-React-Node (MERN). 
             <br />
             <br />
-            Currently learning Python and AWS databases. Obtained my MBA from Eastern New Mexico University in 2013 while playing soccer. 
+            I am currently learning Python and AWS databases. I obtained my MBA from Eastern New Mexico University in 2013 while playing soccer. 
         </p>
         </div>
       </div>

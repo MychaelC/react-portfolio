@@ -114,10 +114,10 @@ nav {
 
 nav {
   position: fixed;
-  background-color: blue;
+  background-color: lightslategray;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  color: white;
+  color: lightslategray;
   height: 70px;
   width: 100%;
   display: flex;
@@ -157,7 +157,7 @@ nav p {
 }
 
 .nav-stack {
-  background-color: blue;
+  background-color: lightslategray;
   border-radius: 5px;
   padding: 0 2px;
   position: absolute;
@@ -196,7 +196,7 @@ nav p {
   top: 0;
   right: 0;
   z-index: 2;
-  background-color: blue;
+  background-color: lightslategray;
   transition: all 0.5s cubic-bezier(0.65, 0, 0.33, 0.99);
   border-left: 2px solid rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -401,4 +401,260 @@ nav p {
   #about-wrapper {
     align-items: center;
   }
+}
+/*---About me*/
+
+#about {
+  width: 90%;
+}
+
+#about p {
+  line-height: 1.3;
+  font-size: 18px;
+}
+
+#about-inner-wrapper h1 {
+  color: lightslategray !important;
+}
+
+#portrait {
+  width: 250px;
+  margin-right: 25px;
+}
+
+#about-wrapper {
+  display: flex;
+}
+
+@media (max-width: 1180px) {
+  #about-wrapper {
+    flex-direction: column;
+  }
+
+  #portrait {
+    margin-bottom: 20px;
+  }
+}
+
+/*---Portfolio*/
+
+#portfolio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+#project-outter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#single-project {
+  position: relative;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+#project-details {
+  opacity: 0;
+  position: absolute;
+  border-radius: 5px;
+  width: 100%;
+  height: 96.5%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: 0.1s all ease-in-out;
+}
+
+#project-details:hover {
+  opacity: 1;
+  transition: 0.2s all ease-in-out;
+}
+
+#project-title,
+#project-stack {
+  position: relative;
+  top: 15px;
+  left: 15px;
+  color: lightslategray;
+}
+
+#project-title {
+  font-size: 22px;
+}
+
+#project-stack {
+  font-size: 18px;
+}
+
+#project-image {
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.recent {
+  width: 300px !important;
+}
+
+#project-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+#project-links a {
+  color: #457b9d;
+}
+
+#project-links a:hover {
+  color: lightslategray;
+}
+
+/*----Contact*/
+
+.form-inner-container {
+  column-gap: 20px;
+  display: grid;
+  grid-template: 42px 42px 125px / 22vw 32vw;
+  row-gap: 25px;
+  margin-bottom: 20px;
+}
+
+.subject {
+  grid-column: 1/3;
+}
+
+form button {
+  font-size: 18px;
+  color: lightslategray;
+  background-color: lightskyblue;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 175px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #b2e9eb;
+}
+
+form button:active {
+  background-color: lightskyblue;
+}
+
+.form-inner-container input::placeholder,
+.form-inner-container textarea::placeholder {
+  opacity: 0.45;
+  font-size: 18px;
+  color: black;
+}
+
+.form-inner-container input[type='text'],
+.form-inner-container textarea,
+.form-inner-container input[type='email'] {
+  font-size: 18px;
+  background-color: lightskyblue;
+  border: 2px solid transparent;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.form-inner-container textarea {
+  padding-top: 10px;
+  grid-column: 1/3;
+  resize: none;
+}
+
+#status {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1150px) {
+  .form-inner-container {
+    grid-template: 42px 38px 125px / 30vw 40vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .name,
+  .email {
+    grid-column: 1/3;
+  }
+
+
+.form-inner-container {
+  grid-template: 42px 42px 42px 175px / 80vw;
+}
+}
+
+/*----Resume*/
+#resume-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#resume-wrapper h1,
+#resume-wrapper li {
+  color: lightslategray;
+}
+
+#resume-wrapper div {
+  padding: 20px 30px;
+  background-color: lightslategray;
+  border-radius: 20px;
+  margin-top: 25px;
+  margin-right: 25px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+#resume li {
+  list-style: circle;
+  text-indent: 10px;
+  margin-left: 22.5px;
+}
+
+#resume-link {
+  color: darkred;
+}
+
+#resume-link:hover {
+  color: darkred;
+}
+
+/*----Footer*/
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-icons {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin: 0 10px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+#footer-wrapper {
+  display: flex;
+}
+
+#footer hr {
+  width: 91vw;
+  opacity: 0.2;
+  margin-top: 30px;
 }
