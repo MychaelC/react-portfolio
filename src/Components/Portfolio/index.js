@@ -85,6 +85,14 @@ const Portfolio = () => {
       github_link: "https://github.com/MychaelC/text-editor-pwa",
       deployed_link: "https://guarded-crag-04701.herokuapp.com/",
     },
+    {
+      title: "Menthol",
+      stack: "Full Stack MERN application",
+      image_url: "https://i.imgur.com/sqUl7Al.png",
+      image_alt: "Preview of Menthol Project",
+      github_link: "https://github.com/FunnyLookingFish/Menthol",
+      deployed_link: "https://mentholfinance.herokuapp.com/",
+    },
   ];
 
   return (
