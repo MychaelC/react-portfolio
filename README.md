@@ -35,11 +35,10 @@ To view and begin using the application run the following command.
 
 What it looks like...
 
-![screenshot]()
-![screenshot]()
-![screenshot]()
+![screenshot](./public/Assets/images/Screen%20Shot%202022-12-01%20at%205.34.59%20PM.png)
+![screenshot](./public/Assets/images/Screen%20Shot%202022-12-01%20at%205.34.39%20PM.png)
 
-View a live link [HERE]()
+View a live link [HERE](https://mychaelc.github.io/react-portfolio/)
 
 # Technology
 
