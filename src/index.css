@@ -35,7 +35,7 @@ footer,
 body,
 html,
 main {
-  background-color: black;
+  background-color: #f1faee;
 }
 
 h2,
@@ -48,7 +48,7 @@ a,
 input,
 input::placeholder,
 textarea::placeholder {
-  color: white;
+  color: #1d3557;
 }
 
 input::placeholder,
@@ -90,7 +90,7 @@ nav {
 }
 
 #main-section-header {
-  color: lightslategray !important;
+  color: #1d3557 !important;
   font-size: 30px;
   letter-spacing: 2px;
 }
@@ -114,10 +114,10 @@ nav {
 
 nav {
   position: fixed;
-  background-color: lightslategray;
+  background-color: #4e1c1c;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  color: lightslategray;
+  color: white;
   height: 70px;
   width: 100%;
   display: flex;
@@ -157,7 +157,7 @@ nav p {
 }
 
 .nav-stack {
-  background-color: lightslategray;
+  background-color: #4e1c1c;
   border-radius: 5px;
   padding: 0 2px;
   position: absolute;
@@ -196,7 +196,7 @@ nav p {
   top: 0;
   right: 0;
   z-index: 2;
-  background-color: lightslategray;
+  background-color: #4e1c1ceb;
   transition: all 0.5s cubic-bezier(0.65, 0, 0.33, 0.99);
   border-left: 2px solid rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);

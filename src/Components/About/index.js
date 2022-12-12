@@ -11,7 +11,7 @@ const About = () => {
             src="https://i.imgur.com/z8VyWj3.jpg?1"
             alt="Me Mychael" />
         <div id="about-inner-wrapper">
-        <h1>Hi, I'm Mychael!</h1>
+        <h1>Hi! I'm Mychael!</h1>
         <p>
             I am a Full Stack Web Developer from Phoenix, AZ. I have a passion for creating applications that are unique and serve a deliberate solution to the end user. Problems are a part of the world we live in and I provide solutions to those problems by always learning and pushing myself to improve. I am never afraid to try something new, instinctively try something that might work, and what is worth trying! Welcome to a little bit about me!
             <br />
