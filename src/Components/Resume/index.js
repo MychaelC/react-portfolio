@@ -41,24 +41,21 @@ const Resume = () => {
                         <li>Bootstrap</li>
                         <li>jQuery</li>
                         <li>Handlebars</li>
-                        <li>Tailwind</li>
+                        <li>Tailwind CSS</li>
                     </ul>
                     </div>
                     <div id="dev-tools">
                     <h1>Web Development Tools</h1>
                     <ul>
                         <li>Git</li>
-                        <li>Node</li>
+                        <li>npm</li>
                         <li>Jest</li>
                         <li>GitHub</li>
                         <li>Visual Studio Code</li>
                         <li>Webpack</li>
-                        <li>NoSQL</li>
+                        <li>Insomnia</li>
                         <li>IndexedDB</li>
-                        <li>LocalStorage</li>
-                        <li>Service Worker</li>
-                        <li>PWA, OOP, ORM</li>
-                        <li>MVC, MERN Stack</li>
+                        <li>Postman</li>
                     </ul>
                     </div>
                     </div>

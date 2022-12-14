@@ -414,7 +414,7 @@ nav p {
 }
 
 #about-inner-wrapper h1 {
-  color: lightslategray !important;
+  color: #1d3557 !important;
 }
 
 #portrait {
@@ -479,7 +479,7 @@ nav p {
   position: relative;
   top: 15px;
   left: 15px;
-  color: lightslategray;
+  color: #1d3557;
 }
 
 #project-title {
@@ -511,7 +511,7 @@ nav p {
 }
 
 #project-links a:hover {
-  color: lightslategray;
+  color: #1d3557;
 }
 
 /*----Contact*/
@@ -530,8 +530,8 @@ nav p {
 
 form button {
   font-size: 18px;
-  color: lightslategray;
-  background-color: lightskyblue;
+  color: #1d3557;
+  background-color: #a8dadc;
   border: none;
   cursor: pointer;
   height: 50px;
@@ -545,7 +545,7 @@ form button:hover {
 }
 
 form button:active {
-  background-color: lightskyblue;
+  background-color: #a8dadc;
 }
 
 .form-inner-container input::placeholder,
@@ -559,7 +559,7 @@ form button:active {
 .form-inner-container textarea,
 .form-inner-container input[type='email'] {
   font-size: 18px;
-  background-color: lightskyblue;
+  background-color: #a8dadc;
   border: 2px solid transparent;
   padding-left: 20px;
   border-radius: 5px;
@@ -606,12 +606,12 @@ input:-webkit-autofill:focus {
 
 #resume-wrapper h1,
 #resume-wrapper li {
-  color: lightslategray;
+  color: #1d3557;
 }
 
 #resume-wrapper div {
   padding: 20px 30px;
-  background-color: lightslategray;
+  background-color: #a8dadc;
   border-radius: 20px;
   margin-top: 25px;
   margin-right: 25px;
@@ -641,8 +641,8 @@ input:-webkit-autofill:focus {
 }
 
 .footer-icons {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   object-fit: cover;
   margin: 0 10px;
   margin-top: 25px;

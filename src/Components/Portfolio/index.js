@@ -87,7 +87,7 @@ const Portfolio = () => {
     },
     {
       title: "Menthol",
-      stack: "Full Stack MERN application",
+      stack: " MERN Application",
       image_url: "https://i.imgur.com/sqUl7Al.png",
       image_alt: "Preview of Menthol Project",
       github_link: "https://github.com/FunnyLookingFish/Menthol",
@@ -108,7 +108,8 @@ const Portfolio = () => {
               stack={item.stack}
               image_url={item.image_url}
               image_alt={item.image_alt}
-              github_link={item.deployed_link}
+              github_link={item.github_link}
+              deployed_link={item.deployed_link}
               nameOfClass={item.nameOfClass}
             />
           );
