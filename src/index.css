@@ -114,7 +114,7 @@ nav {
 
 nav {
   position: fixed;
-  background-color: #4e1c1c;
+  background-color: #b1b6b3;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   color: white;
@@ -148,6 +148,10 @@ nav p {
   opacity: 0.55;
 }
 
+.nav-item {
+  font-size: larger;
+}
+
 .navItem:hover {
   opacity: 0.8;
 }
@@ -157,7 +161,7 @@ nav p {
 }
 
 .nav-stack {
-  background-color: #4e1c1c;
+  background-color: #b1b6b3;
   border-radius: 5px;
   padding: 0 2px;
   position: absolute;
@@ -196,7 +200,7 @@ nav p {
   top: 0;
   right: 0;
   z-index: 2;
-  background-color: #4e1c1ceb;
+  background-color: #b1b6b3eb;
   transition: all 0.5s cubic-bezier(0.65, 0, 0.33, 0.99);
   border-left: 2px solid rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
